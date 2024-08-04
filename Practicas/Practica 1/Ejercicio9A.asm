@@ -7,7 +7,8 @@ Para rotar a la izquierda un byte, se puede multiplicar el número por 2, o lo q
     01101011
 +   01101011
     11010110 (CARRY=0)
-Entonces, la instrucción add ah, ah permite hacer una rotación a izquierda. No obstante, también hay que tener en cuenta que si el bit más significativo es un 1, el carry debe llevarse al bit menos significativo, es decir, se le debe sumar 1 al resultado de la primera suma.
+Entonces, la instrucción add ah, ah permite hacer una rotación a izquierda. No obstante, también hay que tener en cuenta que si el bit más 
+significativo es un 1, el carry debe llevarse al bit menos significativo, es decir, se le debe sumar 1 al resultado de la primera suma.
    10010100
 +  10010100
    00101000 (CARRY=1)
