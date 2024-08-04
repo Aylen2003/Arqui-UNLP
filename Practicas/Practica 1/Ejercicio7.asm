@@ -1,6 +1,6 @@
 # Multiplicación de números sin signo. Pasaje de parámetros a través de Pila.
 # El programa de abajo utiliza una subrutina para multiplicar dos números, pasando los parámetros por valor para NUM1 y NUM2, y 
-por referencia (RES), en ambos casos a través de la pila. Analizar su contenido y contestar.
+# por referencia (RES), en ambos casos a través de la pila. Analizar su contenido y contestar.
 # 1. ¿Cuál es el modo de direccionamiento de la instrucción MOV AX, [BX]? ¿Qué se copia en el registro AX en este caso?
 # 2. ¿Qué función cumple el registro temporal ri que aparece al ejecutarse una instrucción como la anterior?
 # 3. ¿Qué se guarda en AX al ejecutarse MOV AX, OFFSET RES?
@@ -55,8 +55,8 @@ SUMA: ADD DX, AX
 # 2. El resgistro RI es utilizado en el modo de direccionamiento, cumple una funcion similar al IP y SP, en el modo de direccionamiento directo 
 cuando se le pasa el nombre de la variable, lo que hace RI es almacenar en el la direccion de memoria que corresponde a esa variable y luego 
 que termina de cargar la direccion en la que se encuentra la variable  se utiliza ese registro para posicionarte en la direccion almacenada en 
-el registro RI y ahí comienza a cargar los datos de esa direccion en el registro destino. Tambien se utiliza cuando se llama a un a subrutina, en 
-RI se almacena la direccion de la subrutina y luego que es cargada en le registro se mueve esa direccion al IP. Y luego que es cargada en el 
+el registro RI y ahí comienza a cargar los datos de esa direccion en el registro destino. Tambien se utiliza cuando se llama a un a subrutina, 
+en RI se almacena la direccion de la subrutina y luego que es cargada en le registro se mueve esa direccion al IP. Y luego que es cargada en el 
 registro posionamiento en memoria. 
 # 3. Lo que se guarda en AX, es la direccion 1004H. Tras ejecutarse la instrucción MOV AX, OFFSET RES
 # 4.El pasaje de la variable RES a la pila es por referencia. La ventaja que tiene es que son mas flexibles(pasar vectores, listas, etc) y 
